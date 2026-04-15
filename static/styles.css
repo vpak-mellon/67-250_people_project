@@ -1,0 +1,90 @@
+/* Header block: fixed @ top of page, contains logo, title, navbar */
+header {
+    display: block;
+    /* Fix header block to top of viewport */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: fit-content;
+    min-height: 70px;
+    background-color: darkgreen;
+}
+
+/* Header container */
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    min-height: 70px;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Nav block */
+nav {
+    margin-left: auto;
+}
+
+/* Navbar container */
+.navlink-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Navlinks */
+.navbar .navlink {
+    list-style: none;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* Navlink hover animation */
+.navbar .navlink:hover {
+    background-color: blue;
+}
+
+#menu-button {
+    display: none;
+    margin-left: auto;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.gap {
+    /* Gap should be the height of header block + margin */
+    height: 62px; 
+}
+
+footer {
+    border-top: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+
+    .navlink-container {
+        flex-direction: column;
+    }
+
+    .navbar.active {
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100vw;
+        height: fit-content;
+    }
+
+    #menu-button {
+        display: block;
+    }
+}
