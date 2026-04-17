@@ -1,7 +1,15 @@
-/* Font styles */
+/* Universal Styles */
+* {
+    border-radius: 0.25rem;
+}
 
-h1, h2 {
+/* Font styles */
+h1, h2, h3 {
   font-family: "Archivo Black", sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 p, a {
@@ -29,6 +37,7 @@ header {
     height: 100%;
     min-height: 70px;
     background-color: white;
+    border-radius: 0;
     border-bottom: 1px solid black;
     gap: 20px;
     padding: 0 20px;
@@ -49,7 +58,6 @@ nav {
 /* Navlinks */
 .navbar .navlink {
     list-style: none;
-    border-radius: 3px;
     margin: 5px;
     padding: 5px 10px;
     text-align: center;
@@ -59,7 +67,7 @@ nav {
 .navbar .navlink:hover {
     background-color: black;
     color: white;
-    transition: 0.2s;
+    transition: 0.15s;
 }
 
 /* Menu button to toggle navbar for mobile aspect ratio */
@@ -75,6 +83,7 @@ nav {
 }
 
 footer {
+    border-radius: 0;
     border-top: 1px solid black;
     padding: 20px;
     text-align: center;
@@ -83,7 +92,12 @@ footer {
 /* PAGE STRUCTURES */
 /* General page section to keep spacing consistent between sections */
 .page-section {
-    padding: 6.5rem 0;
+    padding: 5rem 3rem;
+}
+
+/* One section "grid" */
+.sub-section {
+    margin: 3rem 0;
 }
 
 /* Two section grid template */
@@ -95,15 +109,24 @@ footer {
 }
 
 .two-section-grid > * {
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 .left-section {
     grid-area: "left-section";
+    padding-left: 0;
 }
 
 .right-section {
     grid-area: "right-section";
+    padding-right: 0;
+}
+
+/* Containers */
+.login-container {
+    display: flex;
+    justify-content: center;
+    width: 100%
 }
 
 /* Remove default styling for links */
@@ -118,11 +141,19 @@ footer {
 }
 
 /* Specific IDs */
-
 #intro-text {
     margin: inherit;
-    padding: inherit;
     font-size: 3.75rem;
+}
+
+/* BUTTON STYLES */
+.button-default {
+    display: block;
+    width: fit-content;
+    margin: 2rem 0;
+    padding: 1.2rem;
+    background-color: black;
+    color: white;
 }
 
 /* Mobile styles */
