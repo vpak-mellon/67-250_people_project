@@ -12,9 +12,15 @@ h2 {
     font-size: 2rem;
 }
 
-p, a {
+p, a, label, input {
     font-family: "Inter", sans-serif;
+    font-size: 16px;
     font-optical-sizing: auto;
+}
+
+input {
+    min-height: 30px;
+    border: 1.5px solid dimgrey;
 }
 
 /* Header block: fixed @ top of page, contains logo, title, navbar */
@@ -92,7 +98,11 @@ footer {
 /* PAGE STRUCTURES */
 /* General page section to keep spacing consistent between sections */
 .page-section {
-    padding: 5rem 3rem;
+    padding: 5rem 7rem;
+}
+
+.bg-light {
+    background-color: #F0F0F0;
 }
 
 /* One section "grid" */
@@ -122,11 +132,67 @@ footer {
     padding-right: 0;
 }
 
-/* Containers */
+/* CONTAINERS */
+.context-container {
+    padding: 5rem 10rem;
+    text-align: center;
+}
+
+.how-it-works {
+    text-align: center;
+}
+
+.method-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.method {
+    padding: 1.5rem;
+    width: 230px;
+    height: 230px;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.teammate {
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+
 .login-container {
     display: flex;
     justify-content: center;
     width: 100%
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-field {
+    grid-template-columns: 1fr 3fr;   
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 /* Remove default styling for links */
@@ -144,6 +210,7 @@ footer {
 .button-default {
     display: block;
     width: fit-content;
+    min-width: 150px;
     margin: 2rem 0;
     padding: 1.2rem;
     background-color: black;
@@ -168,6 +235,10 @@ footer {
     background-color: black;
     color: white;
     border: 1px solid transparent;   
+}
+
+#comments {
+    min-height: 85px;
 }
 
 /* Mobile styles */
@@ -206,6 +277,12 @@ footer {
 
     /* Two section grid template */
     .two-section-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* CONTAINERS */
+    .contact-container {
         display: flex;
         flex-direction: column;
     }
