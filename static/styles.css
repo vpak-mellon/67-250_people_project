@@ -243,6 +243,7 @@ footer {
 
 /* Mobile styles */
 @media (max-width: 768px) {
+    
     .navbar {
         display: none;
         background-color: white;
@@ -275,6 +276,12 @@ footer {
         display: block;
     }
 
+    .page-section, .left-section, .right-section{
+        text-align: center;
+        place-items: center;
+        padding: 5rem 3rem;
+    }
+
     /* Two section grid template */
     .two-section-grid {
         display: flex;
@@ -284,6 +291,10 @@ footer {
     /* CONTAINERS */
     .contact-container {
         display: flex;
+        flex-direction: column;
+    }
+
+    .team-container {
         flex-direction: column;
     }
 }
