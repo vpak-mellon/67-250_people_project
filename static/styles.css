@@ -276,16 +276,27 @@ footer {
         display: block;
     }
 
-    .page-section, .left-section, .right-section{
+    .page-section {
+        padding: 5rem 3rem;
+    }
+
+    .page-section, .left-section, .right-section {
         text-align: center;
         place-items: center;
-        padding: 5rem 3rem;
     }
 
     /* Two section grid template */
     .two-section-grid {
         display: flex;
         flex-direction: column;
+    }
+
+    .left-section {
+        padding-right: 0rem;
+    }
+
+    .right-section {
+        padding-left: 0rem;
     }
 
     /* CONTAINERS */
@@ -296,5 +307,9 @@ footer {
 
     .team-container {
         flex-direction: column;
+    }
+
+    .teammate {
+        margin: auto;
     }
 }
