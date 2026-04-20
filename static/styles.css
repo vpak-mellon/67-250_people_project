@@ -278,6 +278,7 @@ footer {
 
     .page-section {
         padding: 5rem 3rem;
+        place-items: center;
     }
 
     .page-section, .left-section, .right-section {
