@@ -287,12 +287,12 @@ footer {
 
     .page-section {
         padding: 5rem 3rem;
-        place-items: center;
     }
 
     .page-section, .left-section, .right-section {
         text-align: center;
         place-items: center;
+        justify-content: center;
     }
 
     /* Two section grid template */
