@@ -270,6 +270,7 @@ footer {
     /* Navlinks */
     .navbar .navlink {
         text-align: left;
+        z-index: 1000;
     }
 
     /* Active navbar for mobile menu toggle */
@@ -324,5 +325,10 @@ footer {
 
     .teammate {
         margin: auto;
+    }
+
+    /* BUTTON STYLES */
+    .button-default {
+        margin: inherit auto;
     }
 }
