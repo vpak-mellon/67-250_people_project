@@ -90,7 +90,6 @@ nav {
     display: none;
     margin-left: auto;
     padding: 5px;
-    z-index: 1000;
 }
 
 .gap {
@@ -270,14 +269,12 @@ footer {
     /* Navlinks */
     .navbar .navlink {
         text-align: left;
-        z-index: 1000;
     }
 
     /* Active navbar for mobile menu toggle */
     .navbar.active {
         display: block;
         position: fixed;
-        z-index: 1000;
         top: 70px;
         left: 0;
         width: 100%;
@@ -305,12 +302,10 @@ footer {
 
     .left-section {
         padding-right: 0rem;
-        place-items: center;
     }
 
     .right-section {
         padding-left: 0rem;
-        place-items: center;
     }
 
     /* CONTAINERS */
@@ -325,10 +320,5 @@ footer {
 
     .teammate {
         margin: auto;
-    }
-
-    /* BUTTON STYLES */
-    .button-default {
-        margin: inherit auto;
     }
 }
