@@ -3,6 +3,10 @@
     border-radius: 0.25rem;
 }
 
+body {
+    margin: 0;
+}
+
 /* Font styles */
 h1 {
     font-family: "Gochi Hand", cursive;
