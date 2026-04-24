@@ -292,7 +292,6 @@ footer {
     .page-section, .left-section, .right-section {
         text-align: center;
         place-items: center;
-        justify-content: center;
     }
 
     /* Two section grid template */
@@ -303,10 +302,12 @@ footer {
 
     .left-section {
         padding-right: 0rem;
+        place-items: center;
     }
 
     .right-section {
         padding-left: 0rem;
+        place-items: center;
     }
 
     /* CONTAINERS */
