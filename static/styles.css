@@ -250,6 +250,19 @@ footer {
     transition: 0.15s
 }
 
+/* IMAGE/VISUAL STYLES */
+.home-image {
+    display: block;
+    justify-self: center;
+    margin: 0 auto;
+}
+
+.wireframes {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
 /* Specific IDs */
 #intro-text {
     margin: inherit;
@@ -307,7 +320,7 @@ footer {
 
     .page-section, .left-section, .right-section {
         text-align: center;
-        place-items: center;
+        justify-items: center;
     }
 
     /* Two section grid template */
@@ -337,10 +350,11 @@ footer {
     .teammate {
         margin: auto;
     }
-}
 
-.wireframes {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
+    /* BUTTONS */
+    .button-default {
+        display: block;
+        justify-self: center;
+        margin: 2rem auto;
+    }
 }
