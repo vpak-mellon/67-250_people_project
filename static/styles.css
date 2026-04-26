@@ -1,10 +1,12 @@
 /* Universal Styles */
 * {
     border-radius: 0.25rem;
+    color: #38220f;
 }
 
 body {
     margin: 0;
+    background-color: #f2eee8;
 }
 
 /* Font styles */
@@ -33,7 +35,7 @@ p, a, label, input {
 
 input {
     min-height: 30px;
-    border: 1.5px solid dimgrey;
+    border: 1.5px solid #634832;
 }
 
 /* Header block: fixed @ top of page, contains logo, title, navbar */
@@ -55,9 +57,9 @@ header {
     align-items: center;
     height: 100%;
     min-height: 70px;
-    background-color: white;
+    background-color: #f2eee8;
     border-radius: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #634832;
     gap: 20px;
     padding: 0 20px;
 }
@@ -84,7 +86,7 @@ nav {
 
 /* Navlink hover animation */
 .navbar .navlink:hover {
-    background-color: black;
+    background-color: #634832;
     color: white;
     transition: 0.15s;
 }
@@ -103,7 +105,7 @@ nav {
 
 footer {
     border-radius: 0;
-    border-top: 1px solid black;
+    border-top: 1px solid #634832;
     padding: 20px;
     text-align: center;
 }
@@ -115,7 +117,7 @@ footer {
 }
 
 .bg-light {
-    background-color: #F0F0F0;
+    background-color: #e6ddd2;
 }
 
 /* One section "grid" */
@@ -208,6 +210,12 @@ footer {
     flex-wrap: wrap;
 }
 
+.confirmation-container {
+    text-align: center;
+    place-items: center;
+}
+
+/* TEXT STYLES: */
 /* Remove default styling for links */
 .clear-link-styles {
     text-decoration: none;
@@ -216,7 +224,11 @@ footer {
 
 /* Lighter text */
 .whisper {
-    color: dimgrey;
+    color: #634832;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 /* BUTTON STYLES */
@@ -226,15 +238,15 @@ footer {
     min-width: 150px;
     margin: 2rem 0;
     padding: 1.2rem;
-    background-color: black;
+    background-color: #634832;
     color: white;
     border: 1px solid transparent;
 }
 
 .button-default:hover, #navlink-emphasized:hover {
     background-color: white;
-    color: black;
-    border: 1px solid black;
+    color: #634832;
+    border: 1px solid #634832;
     transition: 0.15s
 }
 
@@ -245,7 +257,7 @@ footer {
 }
 
 #navlink-emphasized {
-    background-color: black;
+    background-color: #634832;
     color: white;
     border: 1px solid transparent;   
 }
@@ -267,7 +279,7 @@ footer {
         gap: normal;
         padding-right: 40px;
         padding-bottom: 10px;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #634832;
     }
 
     /* Navlinks */
